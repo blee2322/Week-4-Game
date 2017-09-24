@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to the Crystal Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Crystal Collector</h1>
+  </header>
+
+  <div class= "container">
+    <div class="row">
+      <div class="col-xs-12 rules">
+          <ul>
+            <li>You will be given a random number at the start of the game</li>
+            <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</li>
+            <li>You win the game when your total score matches the random number</li>
+            <li>You lose the game if your total score exceeds the random number</li>
+            <li>The value of each crystal is hidden from you until clicked</li>
+            <li>Each time the game starts the game will change the values of each crystal</li>
+          </ul>
+      </div>
+    </div>
+    <!-- Random Number Panel -->
+    <div class="row">
+      <div class="col-xs-6 randomnumber">
+          <h1 id="rannum"></h1>
+      </div>
+    <!-- Scorecard -->
+      <div class="col-xs-6 scorecard">
+        <div class="row">
+          <div class="col-xs-12">
+          <h1 id="wins"></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+          <h1 id="losses"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-xs-12">
+      </div>
+    </div>
+
+    <!-- Crystal Button Icons -->
+    <div class="row crys">
+      <div class="col-12">
+        <div class="col-xs-3">
+          <button id="diamond" class="btn btn-primary crystal"><img class="icons" src="assets/images/Diamond.jpg"></button>
+        </div>
+        <div class="col-xs-3" >
+          <button id="opal" class="btn btn-primary crystal"><img class ="icons" src="assets/images/Opal.jpg"></button>
+        </div>
+        <div class="col-xs-3">
+          <button id="ruby" class="btn btn-primary crystal"><img class="icons" src="assets/images/Ruby.jpg"></button>
+        </div>
+        <div class="col-xs-3">
+          <button id="sapphire" class="btn btn-primary crystal"><img class="icons" src="assets/images/Sapphire.jpg"></button>
+        </div>
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-xs-12">
+      </div>
+    </div>
+
+    <div class="row">
+        <h2 id="results"></h2>
+    </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </div>
+
+</body>
+</html>
