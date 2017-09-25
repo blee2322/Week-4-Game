@@ -2,6 +2,34 @@ img{
   width: 70px;
   height:70px;
 }
+header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+#results{
+  text-align: center;
+}
+.crys{
+  text-align: center;
+}
+.rules{
+  text-align: center;
+}
 .top-buffer{
   margin: 100px;
+}
+.rules{
+  background-color: #4aaaa5;
+  padding:25px;
+}
+.scorecard{
+  text-align: center;
+  margin-top: 40px;
+}
+.randomnumber{
+  text-align: center;
+  margin-top: 40px;
+}
+.crys{
+  margin-top: 60px;
 }
