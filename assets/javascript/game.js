@@ -11,27 +11,28 @@ $(document).ready(function() {
 
   //This holds the cummulative value of crystals clicked
   var playerTotal = 0
-  $("#results").html("Cummulative Value of Crystals: " + playerTotal);
+  $("#results").html("Cumulative Value of Crystals: " + playerTotal);
 
 //This is a number that game will randomly generate and show it in the rannum div
-  var startNum = Math.floor(Math.random() * 70) + 1;
+  var startNum = Math.floor(Math.random() * 102 + 19);
   $("#rannum").html(startNum);
+  console.log(startNum);
 
   //These will assign the random numbers to each crystal
-  var DiaCrystal = Math.floor(Math.random() * 10);
-  var OpCrystal = Math.floor(Math.random() * 10);
-  var RubCrystal = Math.floor(Math.random() * 10);
-  var SapphCrystal = Math.floor(Math.random() * 10);
+  var DiaCrystal = Math.floor(Math.random() * 11 + 1);
+  var OpCrystal = Math.floor(Math.random() * 11 + 1);
+  var RubCrystal = Math.floor(Math.random() * 11 + 1);
+  var SapphCrystal = Math.floor(Math.random() * 11 + 1);
   console.log(DiaCrystal,OpCrystal,RubCrystal,SapphCrystal);
 
   //This function starts the game and restarts the game
   function resetGame() {
-    startNum = Math.floor(Math.random() * 40) + 1;
+    startNum = Math.floor(Math.random() * 102 + 19);
     $("#rannum").html(startNum);
-    DiaCrystal = Math.floor(Math.random() * 10);
-    OpCrystal = Math.floor(Math.random() * 10);
-    RubCrystal = Math.floor(Math.random() * 10);
-    SapphCrystal = Math.floor(Math.random() * 10);
+    DiaCrystal = Math.floor(Math.random() * 11 + 1);
+    OpCrystal = Math.floor(Math.random() * 11 + 1);
+    RubCrystal = Math.floor(Math.random() * 11 + 1);
+    SapphCrystal = Math.floor(Math.random() * 11 + 1);
     playerTotal = 0
     console.log(DiaCrystal,OpCrystal,RubCrystal,SapphCrystal);  }
 
@@ -58,7 +59,7 @@ $(document).ready(function() {
     }else if (playerTotal >= startNum) {
       lose();
     }
-    $("#results").html("Cummulative Value of Crystals: " + playerTotal);
+    $("#results").html("Cumulative Value of Crystals: " + playerTotal);
   })
   $("#ruby").on("click", function() {
     playerTotal = playerTotal + RubCrystal;
@@ -68,7 +69,7 @@ $(document).ready(function() {
     }else if (playerTotal >= startNum) {
       lose();
     }
-    $("#results").html("Cummulative Value of Crystals: " + playerTotal);
+    $("#results").html("Cumulative Value of Crystals: " + playerTotal);
   })
   $("#diamond").on("click", function() {
     playerTotal = playerTotal + DiaCrystal;
@@ -78,7 +79,7 @@ $(document).ready(function() {
     }else if (playerTotal >= startNum) {
       lose();
     }
-    $("#results").html("Cummulative Value of Crystals: " + playerTotal);
+    $("#results").html("Cumulative Value of Crystals: " + playerTotal);
   })
   $("#sapphire").on("click", function() {
     playerTotal = playerTotal + SapphCrystal;
@@ -88,7 +89,7 @@ $(document).ready(function() {
     }else if (playerTotal >= startNum) {
       lose();
     }
-    $("#results").html("Cummulative Value of Crystals: " + playerTotal);
+    $("#results").html("Cumulative Value of Crystals: " + playerTotal);
   })
 
 
